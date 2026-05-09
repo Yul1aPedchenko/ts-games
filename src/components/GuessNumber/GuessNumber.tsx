@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 export const GuessNumber = () => {
   const randomNumber = Math.floor(Math.random() * 10) + 1;
 
