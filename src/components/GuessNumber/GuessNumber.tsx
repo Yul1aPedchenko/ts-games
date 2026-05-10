@@ -25,7 +25,7 @@ export const GuessNumber = () => {
     <section>
       <div>
         <h2>Вгадай число, яке загадав комп’ютер</h2>
-        <input type="number" placeholder="Введіть число" value={userNumber} onChange={handleInputChange} />
+        <input type="number" placeholder="Введіть число" onChange={handleInputChange} />
         <button onClick={handleCheckNumber}>Перевірити</button>
         <p>{result}</p>
       </div>

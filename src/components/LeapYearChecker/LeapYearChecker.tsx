@@ -22,7 +22,7 @@ export const LeapYearChecker = () => {
     <section>
       <div>
         <h2>Перевір в який рік ти народився</h2>
-        <input type="number" placeholder="Введіть рік народження" value={year} onChange={handleInputChange} />
+        <input type="number" placeholder="Введіть рік народження"  onChange={handleInputChange} />
 
         <button onClick={handleCheckYear}>Перевірити</button>
         <p>{result}</p>
