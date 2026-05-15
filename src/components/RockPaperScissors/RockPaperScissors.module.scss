@@ -1,0 +1,38 @@
+.section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f5f5f5;
+  width: 360px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #333;
+  color: white;
+}
+
+.result {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.score {
+  margin-top: 10px;
+}

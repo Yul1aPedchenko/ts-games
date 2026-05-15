@@ -1,32 +1,32 @@
 import { useState } from "react";
+import styles from "./GuessNumber.module.scss";
+
 export const GuessNumber = () => {
-  const randomNumber = Math.floor(Math.random() * 10) + 1;
+  const random = Math.floor(Math.random() * 10) + 1;
 
-  const [userNumber, setUserNumber] = useState<number>(0);
-  const [result, setResult] = useState<string>("");
+  const [userNumber, setUserNumber] = useState(0);
+  const [result, setResult] = useState("");
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setUserNumber(Number(value));
-  };
-
-  const handleCheckNumber = () => {
+  const check = () => {
     if (!userNumber) {
       setResult("Введіть число");
       return;
     }
 
-    const isGuessed = userNumber === randomNumber;
-
-    setResult(isGuessed ? `Вітаю, ви вгадали число! ${randomNumber}` : `Ви програли, загадане число - ${randomNumber}`);
+    setResult(userNumber === random ? `Вгадали! ${random}` : `Програли! ${random}`);
   };
 
   return (
-    <section>
-      <div>
-        <h2>Вгадай число, яке загадав комп’ютер</h2>
-        <input type="number" placeholder="Введіть число" onChange={handleInputChange} />
-        <button onClick={handleCheckNumber}>Перевірити</button>
+    <section className={styles.section}>
+      <div className={styles.card}>
+        <h2>Guess Number</h2>
+
+        <input type="number" onChange={(e) => setUserNumber(Number(e.target.value))} className={styles.input} />
+
+        <button onClick={check} className={styles.button}>
+          Перевірити
+        </button>
+
         <p>{result}</p>
       </div>
     </section>
