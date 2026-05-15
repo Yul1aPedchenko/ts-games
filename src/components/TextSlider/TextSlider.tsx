@@ -31,9 +31,9 @@ export const TextSlider = ({ items, title }: TextSliderProps) => {
       <div className={styles.content}>{items[index]}</div>
 
       <div className={styles.buttons}>
-        <button onClick={prev}>⬅ Prev</button>
-        <button onClick={random}>🎲 Random</button>
-        <button onClick={next}>Next ➡</button>
+        <button onClick={prev}>Prev</button>
+        <button onClick={random}> Random</button>
+        <button onClick={next}>Next</button>
       </div>
     </div>
   );

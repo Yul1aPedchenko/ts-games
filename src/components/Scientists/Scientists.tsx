@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { scientists, scientistButtons } from "./Scientists.data.ts";
-import type { ActionName } from "./scientists.types.ts";
+import { scientists, scientistButtons } from "./Scientists.data";
+import type { ActionName } from "./Scientists.types";
 import styles from "./Scientists.module.scss";
 
 export const Scientists = () => {

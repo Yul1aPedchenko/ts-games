@@ -1,4 +1,4 @@
-import type { Scientist, ScientistButton } from "./scientists.types";
+import type { Scientist, ScientistButton } from "./Scientists.types";
 
 export const scientists: Scientist[] = [
   {
@@ -100,40 +100,13 @@ export const scientists: Scientist[] = [
 ];
 
 export const scientistButtons: ScientistButton[] = [
-  {
-    text: "Які вчені народилися в 19 ст.",
-    actionName: "bornIn19Century",
-  },
-  {
-    text: "Знайти Einstein",
-    actionName: "findEinstein",
-  },
-  {
-    text: "Відсортувати за алфавітом",
-    actionName: "sortByAlphabet",
-  },
-  {
-    text: 'Прізвище на "C"',
-    actionName: "surnameStartsWithC",
-  },
-  {
-    text: "Сортувати за кількістю років",
-    actionName: "sortByYearsLived",
-  },
-  {
-    text: 'Видалити імена на "A"',
-    actionName: "removeNamesWithA",
-  },
-  {
-    text: "Народився найпізніше",
-    actionName: "youngestScientist",
-  },
-  {
-    text: "Найдовше і найменше прожив",
-    actionName: "longestAndShortestLife",
-  },
-  {
-    text: "Однакові перші літери",
-    actionName: "sameFirstLetters",
-  },
+  { text: "Які вчені народилися в 19 ст.", actionName: "bornIn19Century" },
+  { text: "Знайти Einstein", actionName: "findEinstein" },
+  { text: "Відсортувати за алфавітом", actionName: "sortByAlphabet" },
+  { text: 'Прізвище на "C"', actionName: "surnameStartsWithC" },
+  { text: "Сортувати за кількістю років", actionName: "sortByYearsLived" },
+  { text: 'Видалити імена на "A"', actionName: "removeNamesWithA" },
+  { text: "Народився найпізніше", actionName: "youngestScientist" },
+  { text: "Найдовше і найменше прожив", actionName: "longestAndShortestLife" },
+  { text: "Однакові перші літери", actionName: "sameFirstLetters" },
 ];
